@@ -1,14 +1,9 @@
 const express = require("express");
-
+const produtoController = require("../controllers/produtoController");
 const routes = express.Router();
 
-routes.get("/", (req, res) => {
-  res.send("Olá mundo");
-});
+routes.get("/", produtoController.listarProdutos);
 
-routes.post("/cadastrar", (req, res) => {
-  console.log(req.body);
-  res.send("Cadstrei um prosuto");
-});
+routes.post("/cadastrar", produtoController.cadastrarProduto);
 
 module.exports = routes;
