@@ -10,5 +10,5 @@ export function cadastroProduto(payload: ProdutoPayload) {
 }
 
 export function listarProduto() {
-  return baseApi.get("/");
+  return baseApi.get("/produtos");
 }
