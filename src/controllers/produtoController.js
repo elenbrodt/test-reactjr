@@ -3,8 +3,9 @@ const Produtos = require("../models/produtos.js");
 const produtoController = {
   async listarProdutos(req, res) {
     try {
-      const listaDeTodosPacientes = await Produtos.findAll();
-      res.status(200).json(listaDeTodosPacientes);
+      const listaDeTodosProdutos = await Produtos.findAll();
+      console.log(listaDeTodosProdutos);
+      res.status(200).json(listaDeTodosProdutos);
     } catch (error) {
       console.log(error);
     }

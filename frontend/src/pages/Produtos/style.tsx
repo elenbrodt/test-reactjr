@@ -1,6 +1,6 @@
 import styled from "styled-components";
 //import { Link } from "react-router-dom";
-import { Form, Container as Wrapper } from "react-bootstrap";
+import { Card, Form } from "react-bootstrap";
 
 export const Container = styled.div`
    {
@@ -8,7 +8,7 @@ export const Container = styled.div`
     flex-direction: column;
     margin: 10vh auto;
     gap: 50px;
-    width: 800px;
+    width: 1000px;
     justify-content: center;
     align-items: center;
   }
@@ -19,6 +19,7 @@ export const ProdutoLista = styled.div`
     flex-direction: column;
     margin: 10vh auto;
     gap: 20px;
+    align-items: center;
   }
 `;
 export const FormContainer = styled(Form)`
@@ -28,4 +29,10 @@ export const FormContainer = styled(Form)`
     align-items: center;
     gap: 20px;
   }
+`;
+export const CardProduto = styled(Card)`
+  display: flex;
+  align-items: center;
+  width: 600px;
+  text-align: start;
 `;
